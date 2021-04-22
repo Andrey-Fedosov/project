@@ -132,5 +132,31 @@ let isRightMoon3 = false;
 let isNailGroom3 = isTuesday3 && isRightMoon3;
 console.log(isNailGroom3);
 
+// логическе или || - выдает значение истина при условии, что один из оперрандов команды будет истинным.
+// пример ниже
 
+let isBornInBY = true;
+let hasByPassport = true;
+let isBelarusCitizen = isBornInBY || hasByPassport;
+console.log(isBelarusCitizen);
 
+let isBornInBY1 = false;
+let hasByPassport1 = true;
+let isBelarusCitizen1 = isBornInBY1 || hasByPassport1;
+console.log(isBelarusCitizen1);
+
+let isBornInBY2 = true;
+let hasByPassport2 = false;
+let isBelarusCitizen2 = isBornInBY2 || hasByPassport2;
+console.log(isBelarusCitizen2);
+
+let isBornInBY3 = false;
+let hasByPassport3 = false;
+let isBelarusCitizen3 = isBornInBY3 || hasByPassport3;
+console.log(isBelarusCitizen3);
+
+// логическое отрицание ! прнимает истину если операнд принимает значение противоположное (ложь).
+
+let isDrinkingToday = false; // операнд он же аргумент - выпивал ли человек сегодня. здесь -да
+let hasDrivePermition = !isDrinkingToday; // выезд разрешается при условии, что аргумент ложен
+console.log(hasDrivePermition);
